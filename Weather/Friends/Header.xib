@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Header" customModule="WWeatherathWeatherr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hce-dr-14o">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgB-i9-QUG">
+                            <rect key="frame" x="16" y="7" width="359" height="14.5"/>
+                            <color key="tintColor" red="0.98823529409999999" green="0.30196078430000001" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xgB-i9-QUG" firstAttribute="centerY" secondItem="Hce-dr-14o" secondAttribute="centerY" id="UMJ-6b-jA8"/>
+                        <constraint firstItem="xgB-i9-QUG" firstAttribute="leading" secondItem="Hce-dr-14o" secondAttribute="leading" constant="16" id="qnb-MZ-Ea3"/>
+                        <constraint firstAttribute="trailing" secondItem="xgB-i9-QUG" secondAttribute="trailing" id="tgZ-MS-qXC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hce-dr-14o" secondAttribute="trailing" id="3mI-aC-epj"/>
+                <constraint firstItem="Hce-dr-14o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Iby-rA-Sr3"/>
+                <constraint firstItem="Hce-dr-14o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L5P-Ux-XOR"/>
+                <constraint firstAttribute="bottom" secondItem="Hce-dr-14o" secondAttribute="bottom" id="TVh-HU-TXF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblTitle" destination="xgB-i9-QUG" id="xtb-A3-BiQ"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="15.742128935532236"/>
+        </view>
+    </objects>
+</document>
